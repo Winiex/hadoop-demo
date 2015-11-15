@@ -6,8 +6,8 @@ import org.apache.hadoop.ipc.VersionedProtocol;
 /**
  * Created by winiex on 10/13/2015.
  */
-public interface IPCProtocol extends VersionedProtocol{
+public interface IPCProtocol extends VersionedProtocol {
     long versionID = 1L;
 
-    public Text appendAndEcho(Text input);
+    Text appendAndEcho(Text input);
 }
